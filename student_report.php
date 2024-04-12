@@ -1,5 +1,5 @@
 <?php 
-	// error_reporting(0);
+	error_reporting(0);
 	require 'connection.php';
 
   // CAPTURING THE STUDENT CLICKED ON
@@ -143,14 +143,35 @@
         .back-btn{
             color: #000;
         }
+        button{
+            width: 5rem;
+            text-align: left;
+            background:none;
+            border: none;
+            color: rgba(0,0,0, 0.5);
+        }
+        button:hover{
+            background-color:none;
+            transition: none;
+            color: rgba(0,0,0, 0.5);
+            box-shadow: 0px 0px 0px 0px rgb(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+            border: none;
+            text-align: center;
+
+
+
+}
 	</style>
 </head>
 <body>
 	<div class="back-btn">
-		<a class="logout-btn back-btn" href="view_results.php">Go Back</a>
+		<!-- <a class="logout-btn back-btn" href="view_results.php">Go Back</a> -->
+        <!-- <a href="#" window.print()>Print</a> -->
+        <button onclick="window.print()">Print</button>
 	</div>
 
-	  <div class="report">
+	  <div class="report" window.print()>
         <div class="report-header">
             <div class="header-barge">
                 <img class="header-logo" src="mah-logo.png" alt="School Barge"/>
@@ -165,7 +186,7 @@
             </div>
 
         </div>
-        <p class="assessment">END OF YEAR ASSESSMENT REPORT, 2023</p>
+        <p class="assessment">END OF YEAR ASSESSMENT REPORT, 2024</p>
         <div class="std-particulars">
             <p>NAME: <?php echo "{$student['student_name']}"?></p>
             <p>CLASS: <?php echo "{$student['class']}"?></p>
@@ -176,8 +197,8 @@
             <table class="report-table">
                 <tr>
                     <th>SUBJECT</th>
-                    <th>Formative Assessment (20%)</th>
-                    <th>EOY Summative Assessment (80%)</th>
+                    <th>Formative Assessment (20)</th>
+                    <th>EOY Summative Assessment (80)</th>
                     <th>Total (100%)</th>
                     <th>Level of Achievement /3</th>
                     <th>Descriptor </th>
@@ -327,14 +348,14 @@
         		</table>
         	</div>
         </div>
-        <div class="comment">
+        <!-- <div class="comment">
         	<p class="class-teacher">Class Teacher's Comment: </p>
         	<p>Headteacher's Comment: </p>
 
         </div>
         <div class="school-motto">
         	<em><strong>School Motto: </strong>"EDUCATION IS OUR FUTURE"</em>
-        </div>
+        </div> -->
 
         
     </div>

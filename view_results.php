@@ -1,6 +1,6 @@
 <?php
 	require 'connection.php';
-
+  error_reporting(0);
   session_start();
 
                 //  MARKS UPDATED SUCCESSFULLY 
@@ -293,7 +293,7 @@
         <p class="motto">
             Education is Our Future
         </p>
-        <p class="copy">&copy; 2023 By Rubanga Kene Solomon. All rights reserved</p>
+        <p class="copy">&copy; 2024 Bukenya Simon. All rights reserved</p>
     </footer>
 
     <script>
